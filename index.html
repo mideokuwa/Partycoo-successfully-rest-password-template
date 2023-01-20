@@ -42,8 +42,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center 80%;
-
       }
+
       @media (min-width: 1150px) {
         body {
           background-size: 3000px 900px;
@@ -60,71 +60,71 @@
         font-size: 3.5rem;
         font-weight: 700;
         color: #a31e60;
-        margin-top: 100px;22
-        font-family: "Red Hat Text";
+        margin-top: 100px;
+        22 font-family: "Red Hat Text";
         font-style: normal;
         /* 6 */
         /* or 81px */
       }
-      /* .container {
-        max-width: 340px;
-        margin-inline: auto;
-      }
-      @media (min-width: 576px) {
-        .container {
-          max-width: 540px;
-        }
-      }
-      @media (min-width: 768px) {
-        .container {
-          max-width: 720px;
-        }
-      }
-      @media (min-width: 992px) {
-        .container {
-          max-width: 960px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .container {2
-          max-width: 1140px;
-        }
-      }
-      @media (min-width: 1400px) {
-        .container {
-          max-width: 1320px;
-        }
-      } */
 
+      /* .container {
+          max-width: 340px;
+          margin-inline: auto;
+        }
+        @media (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+        }
+        @media (min-width: 768px) {
+          .container {
+            max-width: 720px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            max-width: 960px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {2
+            max-width: 1140px;
+          }
+        }
+        @media (min-width: 1400px) {
+          .container {
+            max-width: 1320px;
+          }
+        } */
       .container {
         width: 100%;
       }
-      /* @media (min-width: 576px) {
-        .container {
-          max-width: 540px;
-        }
-      }
-      @media (min-width: 768px) {
-        .container {
-          max-width: 720px;
-        }
-      }
-      @media (min-width: 992px) {
-        .container {
-          max-width: 960px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .container {
-          max-width: 1140px;
-        }
-      }
-      @media (min-width: 1400px) {
-        .container {
-          max-width: 1320px;
-        }
-      } */
 
+      /* @media (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+        }
+        @media (min-width: 768px) {
+          .container {
+            max-width: 720px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            max-width: 960px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            max-width: 1140px;
+          }
+        }
+        @media (min-width: 1400px) {
+          .container {
+            max-width: 1320px;
+          }
+        } */
       @media (min-width: 1150px) {
         body {
           background-size: 3000px 900px;
@@ -145,8 +145,6 @@
       p {
         font-size: 18px;
         color: #868383;
-
-
       }
 
       .grid {
@@ -162,7 +160,6 @@
         height: 60px;
         border: none;
         border-radius: 10px;
-
         margin-top: 50px;
         cursor: pointer;
       }
@@ -187,7 +184,6 @@
       hr {
         width: 900px;
         margin-top: 50px;
-
         place-items: center;
         color: #868383;
       }
@@ -200,15 +196,40 @@
       .main-header {
         position: relative;
       }
-      .main-info{
+
+      .main-info {
         background-color: white;
         padding: 2%;
       }
 
       @media (min-width: 768px) {
-        .help p{
-            margin-left: 10px;
+        .help a img {
+          margin-left: 5px;
         }
+      }
+
+      @media (max-width: 768px) {
+        .party p {
+          font-size: 12px;
+        }
+        .foots{
+            margin-top: 20px;
+        }
+      }
+
+
+      .help a img {
+        width: 15px;
+      }
+
+      .party p {
+        float: right;
+      }
+
+      .book{
+        width: 9px;
+        height: 12px;
+        object-fit: contain;
       }
     </style>
   </head>
@@ -242,45 +263,52 @@
       </section>
     </div>
     <footer class="foot">
-      <div
-        class=""
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-top: 50px;
-        "
-      >
+      <div style="align-items: center; margin-top: 50px">
         <div
           class="help"
           style="
             display: flex;
             justify-content: space-between;
-            gap: 3rem;
+            gap: 2rem;
             align-items: center;
             margin-top: 50px;
           "
         >
-          <a href="https://www.linkedin.com/company/partycoo/about/"
-            ><img src="./images/facebook img.png" alt="facebook icon"
-          /></a>
-          <a href="https://twitter.com/mypartycoo"
-            ><img src="./images/twitter img.png" alt="Twitter Icon"
-          /></a>
-          <a href="https://www.instagram.com/mypartycoo/"
-            ><img src="./images/instagram img.png" alt="Instagram Icon"
-          /></a>
+          <div style="display: flex; gap: 2rem">
+            <a href="https://www.linkedin.com/company/partycoo/about/"
+              ><img
+                class="book"
+                src="./images/facebook img.png"
+                alt="facebook icon"
+            /></a>
+            <a href="https://twitter.com/mypartycoo"
+              ><img src="./images/twitter img.png" alt="Twitter Icon"
+            /></a>
+            <a href="https://www.instagram.com/mypartycoo/"
+              ><img src="./images/instagram img.png" alt="Instagram Icon"
+            /></a>
+          </div>
+          <div class="party" style="margin-left: 5px">
+            <p>help@partycoo.com | 07045637812</p>
+          </div>
         </div>
-
-        <p>help@partycoo.com | 07045637812</p>
       </div>
 
-      <div style="margin-top: 70px">
+      <div class="foots" style="margin-top: 70px">
         <img src="./images/footer designs.png" alt="design" />
       </div>
 
-      <div style="margin-top: 50px; float: right; margin-right: 30px">
-        <p>www.Partycoo.com</p>
+      <div
+        style="
+          margin-top: 50px;
+          float: right;
+          margin-right: 30px;
+          cursor: pointer;
+        "
+      >
+        <a href="https://www.partycoo.com">
+          <p>www.Partycoo.com</p>
+        </a>
       </div>
     </footer>
   </body>
